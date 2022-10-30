@@ -81,11 +81,9 @@ th, td {
   padding: 5px;
 }
 
-form {
-	margin: 10px;
-}
-
 input, textarea {
+	width:  90%;
+	padding: 5px;
 	border: 1px solid var(--BUTTONS);
 	border-radius: 8px;
 }
@@ -288,7 +286,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	background-color: var(--ALTBGCOLOR);
 }
 
-.profile, .experience {
+.profile, .experience, .contact {
 	/* max-width: 700px; */
 	padding: 10px;
 	margin:  10px auto;
@@ -309,12 +307,13 @@ li.twolines a:hover:before, li.twolines a:hover:after
 
 .contact-form {
 	width: 500px;
-	box-shadow: 0 0 20px 0 var(--ACCENT);
+	padding: 5px;
+	box-shadow: 5px 5px 20px var(--ACCENT);
 }
 
-.standard-label {
-	width: 500px;
-	height: 40px;
+text-area {
+	width:  90%;
+	resize: vertical;
 }
 
 /* start animation for lightbulb */
