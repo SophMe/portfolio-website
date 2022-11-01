@@ -177,6 +177,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 .button-container{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .page-header {
