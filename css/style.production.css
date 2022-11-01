@@ -221,6 +221,17 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	background-color: #a5beb9;
 	color: black;
 }
+
+.button-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
 .page-header {
 	display: -webkit-box;
 	display: -ms-flexbox;

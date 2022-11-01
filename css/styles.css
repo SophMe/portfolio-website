@@ -173,6 +173,12 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	background-color: var(--BUTTONS);
 	color: black;
 }
+
+.button-container{
+	display: flex;
+	flex-direction: row;
+}
+
 .page-header {
 	display: flex;
 	width: 100%;
