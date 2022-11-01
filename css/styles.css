@@ -176,7 +176,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 
 .button-container{
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .page-header {
