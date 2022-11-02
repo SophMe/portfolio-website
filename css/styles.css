@@ -9,7 +9,9 @@
 	--ACCENT: #635463;
 }
 
-*{ box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
 body {/*simple selector*/
 	font-family: 'Raleway', sans-serif;
@@ -337,8 +339,8 @@ text-area {
 }
 
 /* end animation for lightbulb */
-
-@keyframes color-change { /*for the sun*/
+/*
+@keyframes color-change { /*for the sun
 	0% {
 		fill: #edc655;
 	}
@@ -385,6 +387,7 @@ text-area {
 .cloud-back {
   animation: 20s cloud-move-reverse infinite alternate linear;
 }
+*/
 
 @media all and (max-width: 500px) {
   .project-list {
