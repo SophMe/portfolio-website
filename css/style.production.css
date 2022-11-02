@@ -7,7 +7,7 @@
 
 
 /* || Variables */
-:root { 
+:root {
 	/* COLORS */
 }
 
@@ -19,17 +19,17 @@ body {/*simple selector*/
 	font-weight: undefined;
 	font-size: 16px;
 	line-height: 1.6;
-	background-color: #fbfaf8;
+	background-color: #a5beb9;
 	margin: 20px;
 	text-align: left;
 }
 
 footer {
-	background-color: #e8dfd9;
+	background-color: #fbfaf8;
 }
 
 div {
-	background-color: #e8dfd9;
+	background-color: #fbfaf8;
 }
 
 h1 {
@@ -165,7 +165,7 @@ li.container a
 }
 
 .bgcol {
-	background: #e8dfd9;
+	background: #fbfaf8;
 }	
 
 li.twolines a:before
@@ -228,7 +228,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	display: flex;
 	width: 100%;
 	padding: 20px;
-	background-color: #e8dfd9;
+	background-color: #fbfaf8;
 	border-bottom: 2px solid #a5beb9;
 }
 
@@ -289,7 +289,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	max-width: 800px;	
 }
 
-//* start grid fallback for old browsers */
+/* start grid fallback for old browsers */
 .project-list__item {
 	display: inline-block;
 	width: 33%;
@@ -313,12 +313,12 @@ li.twolines a:hover:before, li.twolines a:hover:after
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: #fbfaf8;
+  background-color: #a5beb9;
   margin: 0 0 20px 0;
 }
 
 .project-list__item {
-	background-color: #e8dfd9;
+	background-color: #fbfaf8;
 	grid-gap: 5px;
 	padding: 10px;
 }
@@ -353,7 +353,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 }
 
 .span {
-	background-color: #e8dfd9;
+	background-color: #fbfaf8;
 }
 
 .profile, .experience, .contact {
@@ -381,7 +381,9 @@ li.twolines a:hover:before, li.twolines a:hover:after
 }
 
 .contact-form {
+	display: block;
 	width: 500px;
+	margin: 0 auto;
 	padding: 5px;
 	-webkit-box-shadow: 5px 5px 20px #635463;
 	        box-shadow: 5px 5px 20px #635463;
@@ -436,7 +438,7 @@ text-area {
 	75% {
 		fill: #b85a42;
 	}
-	100%: {
+	100% {
 		fill: #f76414
 	}
 }
@@ -454,7 +456,7 @@ text-area {
 	75% {
 		fill: #b85a42;
 	}
-	100%: {
+	100% {
 		fill: #f76414
 	}
 }
