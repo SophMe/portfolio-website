@@ -408,3 +408,9 @@ text-area {
     grid-row: auto / auto;
   }
 }
+
+@media all and (max-width:  420px){
+	.page-header {
+		flex-direction: column;
+	}
+}
