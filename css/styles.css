@@ -1,6 +1,6 @@
 
 /* || Variables */
-:root { 
+:root {
 	/* COLORS */
 	--BGCOLOR: #fbfaf8; 
 	--ALTBGCOLOR: #e8dfd9;
@@ -234,7 +234,7 @@ li.twolines a:hover:before, li.twolines a:hover:after
 	max-width: 800px;	
 }
 
-//* start grid fallback for old browsers */
+/* start grid fallback for old browsers */
 .project-list__item {
 	display: inline-block;
 	width: 33%;
@@ -349,7 +349,7 @@ text-area {
 	75% {
 		fill: #b85a42;
 	}
-	100%: {
+	100% {
 		fill: #f76414
 	}
 }
