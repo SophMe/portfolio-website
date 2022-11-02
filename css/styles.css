@@ -2,8 +2,8 @@
 /* || Variables */
 :root {
 	/* COLORS */
-	--BGCOLOR: #fbfaf8; 
-	--ALTBGCOLOR: #e8dfd9;
+	--BGCOLOR: #a5beb9; 
+	--ALTBGCOLOR: #fbfaf8;
 	--TEXT: #22223b;
 	--BUTTONS: #a5beb9;
 	--ACCENT: #635463;
@@ -307,7 +307,9 @@ li.twolines a:hover:before, li.twolines a:hover:after
 }
 
 .contact-form {
+	display: block;
 	width: 500px;
+	margin: 0 auto;
 	padding: 5px;
 	box-shadow: 5px 5px 20px var(--ACCENT);
 }
