@@ -13,7 +13,7 @@
 }
 
 body {/* simple selector */
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;
   color: var(--TEXT);
   font-weight: var(--HFontWeight);
   font-size: 16px;

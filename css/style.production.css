@@ -16,7 +16,7 @@
 }
 
 body {/* simple selector */
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway', sans-serif;
   color: #22223b;
   font-weight: undefined;
   font-size: 16px;
@@ -107,7 +107,7 @@ textarea {
 button {
   border: none;
   display: inline-block;
-  font-family: inherit; /*takes font from outer container*/
+  font-family: inherit; /* takes font from outer container */
   background-color: #a5beb9;
   color: white;
   text-decoration: none;
@@ -115,15 +115,15 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
-  transition: 0.4s opacity; 
-  /*transition-duration: 0.4s;
-  transition-property: opacity;*/
+  transition: 0.4s opacity;
+  /* transition-duration: 0.4s;
+  transition-property: opacity; */
 }
 
 .button {
   border: none;
   display: inline-block;
-  font-family: inherit; /*takes font from outer container*/
+  font-family: inherit; /* takes font from outer container */
   background-color: #a5beb9;
   color: white;
   text-decoration: none;
@@ -131,9 +131,9 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
-  transition: 0.4s opacity; 
-  /*transition-duration: 0.4s;
-  transition-property: opacity;*/
+  transition: 0.4s opacity;
+  /* transition-duration: 0.4s;
+  transition-property: opacity; */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
