@@ -92,16 +92,16 @@ input, textarea {
 button, .button {
   border: none;
   display: inline-block;
-  font-family: inherit; /*takes font from outer container*/
+  font-family: inherit; /* takes font from outer container */
   background-color: var(--BUTTONS);
   color: white;
   text-decoration: none;
   padding: 5px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.4s opacity; 
-  /*transition-duration: 0.4s;
-  transition-property: opacity;*/
+  transition: 0.4s opacity;
+  /* transition-duration: 0.4s;
+  transition-property: opacity; */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -230,7 +230,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 /* start grid fallback for old browsers */
 .project-list__item {
   display: inline-block;
-  width: 33%;
+  width: 100%;
 }
 
 /* end grid fallback for old browsers */
@@ -298,6 +298,10 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 .experience {
   display: flex;
   flex-direction: row;
+}
+
+.contact {
+  text-align: center;
 }
 
 .contact-form {
