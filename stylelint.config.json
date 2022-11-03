@@ -1,7 +1,3 @@
-{
-	"extends": "stylelint-config-standard"
-}
-
 "use strict"
 
 module.exports = {
