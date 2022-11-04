@@ -18,7 +18,7 @@
 body {/* simple selector */
   font-family: 'Raleway', sans-serif;
   color: #22223b;
-  font-weight: undefined;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
   background-color: #a5beb9;
