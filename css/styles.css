@@ -410,7 +410,7 @@ text-area {
   }
 }
 
-@media all and (max-width:  420px) {
+@media all and (max-width: 420px) {
   .page-header {
     flex-direction: column;
   }
