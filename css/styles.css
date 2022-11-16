@@ -6,7 +6,6 @@
   --TEXT: #22223b;
   --BUTTONS: #a5beb9;
   --ACCENT: #635463;
-  --HFONTWEIGHT: 400;
 }
 
 * {
@@ -16,7 +15,7 @@
 body {/* simple selector */
   font-family: 'Raleway', sans-serif;
   color: var(--TEXT);
-  font-weight: var(--HFontWeight);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--BGCOLOR);
@@ -34,17 +33,17 @@ div {
 
 h1 {
   font-size: 30px;
-  font-weight: var(--HFontWeight);
+  font-weight: 400;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--HFontWeight);
+  font-weight: 400;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--HFontWeight);
+  font-weight: 400;
 }
 
 a {
