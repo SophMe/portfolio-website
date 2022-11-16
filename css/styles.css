@@ -226,7 +226,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 }
 
 #about-picture {
-  max-width: 800px;}
+  max-width: 700px;}
 
 /* start grid fallback for old browsers */
 .project-list__item {
@@ -282,8 +282,9 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   background-color: var(--ALTBGCOLOR);
 }
 
-.profile, .experience, .contact {
+.profile, .about, .experience, .contact {
   /* max-width: 700px; */
+  min-height: 300px;
   padding: 10px;
   margin: 10px auto;
 }
@@ -294,6 +295,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   width: 250px;
   height: auto;
   margin-right: 40px;
+  box-shadow: 5px 5px 20px var(--ACCENT);
 }
 
 .experience {
