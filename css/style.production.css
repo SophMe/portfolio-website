@@ -112,6 +112,7 @@ button {
   color: white;
   text-decoration: none;
   padding: 5px;
+  margin: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
@@ -128,6 +129,7 @@ button {
   color: white;
   text-decoration: none;
   padding: 5px;
+  margin: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
@@ -383,8 +385,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .contact-form {
   display: block;
-  width: 500px;
-  margin: 0 auto;
+  width: 420px;
+  margin: 20px auto;
   padding: 5px;
   -webkit-box-shadow: 5px 5px 20px #635463;
           box-shadow: 5px 5px 20px #635463;
@@ -393,6 +395,10 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 text-area {
   width: 90%;
   resize: vertical;
+}
+
+.error-message {
+  color: red;
 }
 
 /* start animation for lightbulb */
