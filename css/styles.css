@@ -317,7 +317,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 text-area {
   width: 90%;
-  resize: vertical;
+  /*resize: none;*/
 }
 
 .error-message {

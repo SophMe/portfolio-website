@@ -50,12 +50,12 @@
 	    return isValidEmail && hasMessage;
 	}
 
-	// form.addEventListener('submit'), (e) => {
-	// 	e.preventDefault();
-	// 	if (validateForm()) {
-	// 		alert('Success!');
-	// 	}
-	// }
+	form.addEventListener('submit'), (e) => {
+		e.preventDefault();
+		if (validateForm()) {
+			alert('Success!');
+		}
+	}
 
 	emailInput.addEventListener('input', validateEmail);
 	messageInput.addEventListener('input', validateMessage);
