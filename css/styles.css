@@ -257,6 +257,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   background-color: var(--ALTBGCOLOR);
   grid-gap: 5px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .project-list__item:last-child {
