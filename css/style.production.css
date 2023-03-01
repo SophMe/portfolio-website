@@ -317,6 +317,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   background-color: #fbfaf8;
   grid-gap: 5px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .project-list__item:last-child {
@@ -394,7 +395,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 text-area {
   width: 90%;
-  resize: vertical;
+  /*resize: none;*/
 }
 
 .error-message {
