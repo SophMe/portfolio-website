@@ -3,7 +3,7 @@
   /* COLORS */
   --BGCOLOR: #a5beb9;
   --ALTBGCOLOR: #fbfaf8;
-  --TEXT: #22223b;
+  --TEXT: red;
   --BUTTONS: #a5beb9;
   --ACCENT: #635463;
 }
@@ -13,9 +13,9 @@
 }
 
 body {/* simple selector */
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inconsolata', monospace;
   color: var(--TEXT);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--BGCOLOR);
@@ -33,17 +33,17 @@ div {
 
 h1 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -101,8 +101,6 @@ button, .button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.4s opacity;
-  /* transition-duration: 0.4s;
-  transition-property: opacity; */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -114,9 +112,9 @@ ul { list-style-type: none; }
 
 li { text-decoration: none; }
 
-/* start Top and Bottom borders go out, how do I credit this CodePen? (https://codepen.io/EvyatarDa/pen/waKXMd) */
+/* start Top and Bottom borders go out, inspired by [@EvyatarDa](https://codepen.io/EvyatarDa/pen/waKXMd) */
 li.container {
-  font-family: Raleway;
+  font-family: Inconsolata;
   margin: 0 auto;
   padding: 15px;
   text-align: right;
@@ -125,7 +123,7 @@ li.container {
 li.container a {
   color: fff;
   text-decoration: none;
-  font: 16px Raleway;
+  font: 16px Inconsolata;
   margin: 0px;
   padding: 10px 10px;
   position: relative;
@@ -162,7 +160,6 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
-
 /* end Top and Bottom borders go out */
 
 .button__secondary {/* class selector */
@@ -233,7 +230,6 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   display: inline-block;
   width: 100%;
 }
-
 /* end grid fallback for old browsers */
 
 @supports (display: grid) {
@@ -273,7 +269,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .page-footer {
   clear: both; /* clear all floats, both left and right */
-  display: flex; /* this creates a flex-container for the element .page-footer */
+  display: flex;
   flex-direction: column;
   text-align: center;
   flex: 1 1 100;
@@ -341,58 +337,7 @@ text-area {
 .light {
   animation: 6s color-change-lightbulb infinite alternate linear;
 }
-
 /* end animation for lightbulb */
-
-/*
-@keyframes color-change { /*for the sun
-  0% {
-    fill: #edc655;
-  }
-  25% {
-    fill: #b85a42;
-  }
-  50% {
-    fill: #993b37;
-  }
-  75% {
-    fill: #b85a42;
-  }
-  100% {
-    fill: #f76414
-  }
-}
-
-.sun {
-  animation: 10s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 30px);
-  }
-}
-
-.cloud-front {
-  animation: 32s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 120px);
-  }
-}
-
-.cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate linear;
-}
-*/
 
 @media all and (max-width: 500px) {
   .project-list {
