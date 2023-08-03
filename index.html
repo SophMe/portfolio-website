@@ -1,72 +1,170 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.production.css">
-	<title>Sophie Meinz - Portfolio</title>
-</head>
-	
-<body>
-	<header class="page-header">
-		<a href="index.html" class="page-header__item"><img src="img/logo.png" height="70px" alt="logo Sophie Meinz"></a>
-		<nav class="main-navigation page-header__item"> <!-- BEM convention!-->
-			<div>
-				<ul role="menubar" class="navigation-list">	
-					<li role="presentation" class="container bgcol twolines">
-						<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">home</a>
-					</li>
-					<li role="presentation" class="container bgcol twolines">
-						<a href="about.html" role="menuitem" class="navigation-list__item" aria-label="About page">about</a>
-					</li>
-					<li role="presentation" class="container bgcol twolines">
-						<a href="work.html" role="menuitem" class="navigation-list__item">projects</a>
-					</li>
-					<li role="presentation" class="container bgcol twolines">
-						<a href="contact.html" role="menuitem" class="navigation-list__item">contact</a>
-					</li>	
-				</ul>
-			</div>	
-		</nav>	
-	</header>	
-		
-	<main>
-		<div class="profile">
-			<img src="img/IMG_1062.JPG" class="profile-portrait" alt="Sophie Meinz Portrait">
-			<h1>Hi!</h1>
-			<p>
-				My name is Sophie. I'm a future full-stack <span class="span">web</span> developer from Berlin.
-			</p>
-			<p>
-				Make meme, make cute face snuggles up to shoulders or knees and purrs you to sleep but throwup on your pillow, so eat my own ears. I like to spend my days sleeping and eating fishes that my human fished for me.
-			</p>
-			<p>
-				<a href="work.html">Check out some of my code</a>
-			</p>
-		</div>		
-	</main>
-		
-	<footer class="page-footer">
-		<h2>Find me on</h2>
-		<div class="social-media">
-			<a href="https://codepen.io/SophMe" target="_blank"><img src="img/codepen.svg" alt="CodePen"></a>
-			<a href="https://github.com/SophMe?tab=repositories" target="_blank"><img src="img/github.svg" alt="Github"></a>
-			<img src="img/linkedin.svg" alt="LinkedIn">
-			<img src="img/stackoverflow.svg" alt="Stackoverflow">
-		</div>	
-	</footer>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
-	<script src="js/tota11y.min.js"></script>
-</body>
-	
-<!--
-	<a href="about.html#myskills">My Skills</a>
-	This ankor links to a section of a different page. The ID is id="about.html#myskills" and can be added to diferrent tags.
+    <title>Sophie Meinz - Portfolio</title>
+  </head>
+    
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__item"><img src="img/logo.png" height="70px" alt="logo Sophie Meinz"></a>
+      <nav class="main-navigation page-header__item">
+        <div>
+          <ul role="menubar" class="navigation-list">	
+            <li role="presentation" class="container bgcol twolines">
+              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">home</a>
+            </li>
+            <li role="presentation" class="container bgcol twolines">
+              <a href="#about" role="menuitem" class="navigation-list__item" aria-label="About section">about</a>
+            </li>
+            <li role="presentation" class="container bgcol twolines">
+              <a href="#skills" role="menuitem" class="navigation-list__item" aria-label="Skills section">skills</a>
+            </li>
+            <li role="presentation" class="container bgcol twolines">
+              <a href="#work" role="menuitem" class="navigation-list__item" aria-label="Projects section">projects</a>
+            </li>
+            <li role="presentation" class="container bgcol twolines">
+              <a href="#contact" role="menuitem" class="navigation-list__item" aria-label="Contact section">contact</a>
+            </li>	
+          </ul>
+        </div>	
+      </nav>	
+    </header>	
+      
+    <main>
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="profile-container">
+          <img src="img/IMG_1062.JPG" class="profile-portrait" alt="Sophie Meinz Portrait">
+          <h1>Hello!</h1>
+          <p>
+            My name is Sophie. I'm a full-stack web developer living in Berlin.
+          </p>
+          <p>
+            Curious language enthusiast. <br>
+            Excited to continue learning and <br>
+            Passionate about making a positive impact.
+          </p>
+          <p>
+            <a href="files/cv.pdf" class="button" download>Download my CV</a>
+            <a href="https://de.linkedin.com/" class="button" target="_blank">LinkedIn</a>
+            <br>
+            <a href="#work">Check out some of my code</a>
+          </p>
+        </div>
+      </section>
+      
+      <!-- SKILLS -->
+      <section id="skills">
 
-	<a href="#about" target="_blank">About</a> opens page in a new tab.
--->
+      </section>
+
+       <!-- WORK -->
+       <section id="work">
+        <h1>Work</h1>
+        <div class="work-container">
+          <div class="project-list">
+            
+            <div class="project-list__item">
+              <h2>Chat App</h2>
+              <p>
+                A simple chat app built using React Native that provides users with a chat interface and 
+                options to share images and their location.
+              </p>
+              <a href="https://github.com/SophMe/chat-app" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+              <h2>Client-Side React App</h2>
+              <p>
+                This is the client-side for the <a href="https://github.com/SophMe/90s-movie-api" target="_blank">REST API</a>, 
+                built with React and React Bootstrap.
+              </p>
+              <a href="https://github.com/SophMe/movieAPI-client" target="_blank">See project on GitHub</a>
+              <a href="https://90s-movies.netlify.app/movies" target="_blank">App</a>
+            </div>
+
+            <div class="project-list__item">
+              <h2>Meet App</h2>
+              <p>
+                This is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) 
+                technique. The application uses the Google Calendar API to fetch upcoming events.
+              </p>
+              <a href="https://sophme.github.io/meet/" target="_blank">Open project in a new tab</a>
+              <br>
+              <a href="https://github.com/SophMe/meet" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+              <h2>Pokémon Index App</h2>
+              <p>
+                This is a web application build with HTML, CSS and Javascript loading a list of Pokémon from an external 
+                API and enabling the user to view data points in detail.
+              </p>
+              <a href="https://clever-fox-ab3f44.netlify.app/" target="_blank">Open project in a new tab</a>
+              <br>
+              <a href="https://github.com/SophMe/Index-App" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+              <h2>REST API 90s Movies</h2>
+              <p>
+                REST API that interacts with a database and stores data about different movies. Built using Node.js and Express.
+              </p>
+              <a href="https://github.com/SophMe/90s-movie-api" target="_blank">See project on GitHub</a>  
+            </div>
+
+            <div class="project-list__item">
+              <h2>Simple To-do App</h2>
+              <p>
+                This is a basic To-Do-List app with the following features:<br>
+                The user can add a new item to a list of items, cross out an item from the list of items, 
+                delete an item from the list of items, and change the order of items in the list of items.
+              </p>
+                <a href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">Open project in a new tab</a>
+              <br>
+              <a href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+              <h2>Client-Side Angular App</h2>
+              <p>
+                Client-Side for the 90s Movie API built with Angular.
+              </p>
+              <a href="https://sophme.github.io/movie-client-Angular/welcome">Open project in a new tab</a>
+              <br>
+              <a href="https://github.com/SophMe/movie-client-Angular" target="_blank">See project on GitHub</a>
+            </div>
+              
+          </div>
+        </div>
+       </section>
+
+    </main>
+      
+    <footer class="page-footer">
+      <!-- CONTACT -->
+      <section id="contact">
+        <h3>Find me on</h3>
+        <div class="social-media">
+          <a href="https://codepen.io/SophMe" target="_blank"><img src="img/codepen.svg" alt="CodePen"></a>
+          <a href="https://github.com/SophMe?tab=repositories" target="_blank"><img src="img/github.svg" alt="Github"></a>
+          <img src="img/linkedin.svg" alt="LinkedIn">
+          <!-- <img src="img/stackoverflow.svg" alt="Stackoverflow"> -->
+          <div alt="Email">Send me a message: meinzsophie@gmail.com</div>
+        </div>	
+      </section>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
 
 </html>

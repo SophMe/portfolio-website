@@ -8,6 +8,14 @@
 /* || Variables */
 :root {
   /* COLORS */
+  --BGCOLOR: #a5beb9;
+  --ALTBGCOLOR: #fbfaf8;
+  --TEXTCOLOR: #22223b;
+  --BUTTONS: #a5beb9;
+  --ACCENT: #635463;
+  /* TEXT*/
+  --TITLEFONT: 'Raleway', sans-serif;
+  --TEXTFONT: 'Open Sans', sans-serif;
 }
 
 * {
@@ -16,60 +24,55 @@
 }
 
 body {/* simple selector */
-  font-family: 'Raleway', sans-serif;
-  color: #22223b;
+  font-family: var(--TEXTFONT);
+  color: var(--TEXTCOLOR);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #a5beb9;
+  background-color: var(--BGCOLOR);
   margin: 20px;
   text-align: left;
 }
 
 footer {
-  background-color: #fbfaf8;
+  background-color: var(--ALTBGCOLOR);
 }
 
 div {
-  background-color: #fbfaf8;
+  background-color: var(--ALTBGCOLOR);
 }
 
 h1 {
+  font-family: var(--TITLEFONT);
   font-size: 30px;
-  font-weight: 400;
 }
 
 h2 {
+  font-family: var(--TITLEFONT);
   font-size: 24px;
-  font-weight: 400;
 }
 
 h3 {
+  font-family: var(--TITLEFONT);
   font-size: 18px;
-  font-weight: 400;
 }
 
 a {
-  color: #22223b;
+  color: var(--TEXTCOLOR);
   text-decoration: none;
 }
 
 a:visited { /* pseudo class */
-  color: #22223b;
+  color: var(--TEXTCOLOR);
 }
 
-a:hover {
-  color: #635463;
-  text-decoration: none;
-}
-
-a:focus {
-  color: #635463;
+a:hover, a:focus {
+  color: var(--ACCENT);
   text-decoration: none;
 }
 
 a:active {
-  color: #22223b;
+  color: var(--TEXTCOLOR);
 }
 
 hr {
@@ -90,46 +93,22 @@ th, td {
   padding: 5px;
 }
 
-input {
+input, textarea {
   width: 90%;
   padding: 5px;
-  border: 1px solid #a5beb9;
+  border: 1px solid var(--BUTTONS);
   border-radius: 8px;
 }
 
-textarea {
-  width: 90%;
-  padding: 5px;
-  border: 1px solid #a5beb9;
-  border-radius: 8px;
-}
-
-button {
+button, .button {
   border: none;
   display: inline-block;
   font-family: inherit; /* takes font from outer container */
-  background-color: #a5beb9;
+  background-color: var(--BUTTONS);
   color: white;
   text-decoration: none;
   padding: 5px;
-  margin: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s opacity;
-  transition: 0.4s opacity;
-  /* transition-duration: 0.4s;
-  transition-property: opacity; */
-}
-
-.button {
-  border: none;
-  display: inline-block;
-  font-family: inherit; /* takes font from outer container */
-  background-color: #a5beb9;
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-  margin: 10px;
+  margin-right: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
@@ -147,9 +126,12 @@ ul { list-style-type: none; }
 
 li { text-decoration: none; }
 
-/* start Top and Bottom borders go out, how do I credit this CodePen? (https://codepen.io/EvyatarDa/pen/waKXMd) */
+/** START 
+/* navbar links: top and bottom borders go out
+/* inspired by Evyatar Da's codepen https://codepen.io/EvyatarDa/pen/waKXMd
+*/
 li.container {
-  font-family: Raleway;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   padding: 15px;
   text-align: right;
@@ -158,7 +140,7 @@ li.container {
 li.container a {
   color: fff;
   text-decoration: none;
-  font: 16px Raleway;
+  font: 18px var(--TEXTFONT);
   margin: 0px;
   padding: 10px 10px;
   position: relative;
@@ -167,27 +149,15 @@ li.container a {
 }
 
 .bgcol {
-  background: #fbfaf8;
+  background: var(--ALTBGCOLOR);
 }
 
-li.twolines a:before {
+li.twolines a:before, li.twolines a:after {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: #a5beb9;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-li.twolines a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #a5beb9;
+  background: var(--BUTTONS);
   content: "";
   opacity: 0;
   -webkit-transition: all 0.4s;
@@ -211,11 +181,10 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
+/* END top and bottom borders go out */
 
-/* end Top and Bottom borders go out */
-
-.button__secondary {/* class selector */
-  background-color: #a5beb9;
+.button__secondary {
+  background-color: var(--BUTTONS);
   color: black;
 }
 
@@ -225,8 +194,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: #fbfaf8;
-  border-bottom: 2px solid #a5beb9;
+  background-color: var(--ALTBGCOLOR);
+  border-bottom: 2px solid var(--BUTTONS);
 }
 
 .page-header__item {
@@ -303,18 +272,20 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   }
 }
 
+/* WORK */
+
 .project-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: #a5beb9;
+  background-color: var(--BGCOLOR);
   margin: 0 0 20px 0;
 }
 
 .project-list__item {
-  background-color: #fbfaf8;
+  background-color: var(--ALTBGCOLOR);
   grid-gap: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -324,14 +295,22 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   -ms-grid-column: 3;
   grid-column: 3/3;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ span 3;
   /* in long form this would be: ;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   */
+}
+
+#work .project-list__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 165px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .page-footer {
@@ -350,7 +329,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 }
 
 .span {
-  background-color: #fbfaf8;
+  background-color: var(--ALTBGCOLOR);
 }
 
 .profile, .about, .experience, .contact {
@@ -365,9 +344,9 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   border-radius: 50%;
   width: 250px;
   height: auto;
-  margin-right: 40px;
-  -webkit-box-shadow: 5px 5px 20px #635463;
-          box-shadow: 5px 5px 20px #635463;
+  margin: 10px 40px 10px 10px;
+  -webkit-box-shadow: 5px 5px 20px var(--ACCENT);
+          box-shadow: 5px 5px 20px var(--ACCENT);
 }
 
 .experience {
@@ -389,8 +368,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   width: 420px;
   margin: 20px auto;
   padding: 5px;
-  -webkit-box-shadow: 5px 5px 20px #635463;
-          box-shadow: 5px 5px 20px #635463;
+  -webkit-box-shadow: 5px 5px 20px var(--ACCENT);
+          box-shadow: 5px 5px 20px var(--ACCENT);
 }
 
 text-area {

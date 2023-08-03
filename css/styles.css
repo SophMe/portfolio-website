@@ -3,9 +3,12 @@
   /* COLORS */
   --BGCOLOR: #a5beb9;
   --ALTBGCOLOR: #fbfaf8;
-  --TEXT: #22223b;
+  --TEXTCOLOR: #22223b;
   --BUTTONS: #a5beb9;
   --ACCENT: #635463;
+  /* TEXT*/
+  --TITLEFONT: 'Raleway', sans-serif;
+  --TEXTFONT: 'Open Sans', sans-serif;
 }
 
 * {
@@ -13,8 +16,8 @@
 }
 
 body {/* simple selector */
-  font-family: 'Raleway', sans-serif;
-  color: var(--TEXT);
+  font-family: var(--TEXTFONT);
+  color: var(--TEXTCOLOR);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -32,27 +35,27 @@ div {
 }
 
 h1 {
+  font-family: var(--TITLEFONT);
   font-size: 30px;
-  font-weight: 400;
 }
 
 h2 {
+  font-family: var(--TITLEFONT);
   font-size: 24px;
-  font-weight: 400;
 }
 
 h3 {
+  font-family: var(--TITLEFONT);
   font-size: 18px;
-  font-weight: 400;
 }
 
 a {
-  color: var(--TEXT);
+  color: var(--TEXTCOLOR);
   text-decoration: none;
 }
 
 a:visited { /* pseudo class */
-  color: var(--TEXT);
+  color: var(--TEXTCOLOR);
 }
 
 a:hover, a:focus {
@@ -61,7 +64,7 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: var(--TEXT);
+  color: var(--TEXTCOLOR);
 }
 
 hr {
@@ -97,7 +100,7 @@ button, .button {
   color: white;
   text-decoration: none;
   padding: 5px;
-  margin: 10px;
+  margin-right: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.4s opacity;
@@ -114,9 +117,12 @@ ul { list-style-type: none; }
 
 li { text-decoration: none; }
 
-/* start Top and Bottom borders go out, how do I credit this CodePen? (https://codepen.io/EvyatarDa/pen/waKXMd) */
+/** START 
+/* navbar links: top and bottom borders go out
+/* inspired by Evyatar Da's codepen https://codepen.io/EvyatarDa/pen/waKXMd
+*/
 li.container {
-  font-family: Raleway;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   padding: 15px;
   text-align: right;
@@ -125,7 +131,7 @@ li.container {
 li.container a {
   color: fff;
   text-decoration: none;
-  font: 16px Raleway;
+  font: 18px var(--TEXTFONT);
   margin: 0px;
   padding: 10px 10px;
   position: relative;
@@ -162,10 +168,9 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
+/* END top and bottom borders go out */
 
-/* end Top and Bottom borders go out */
-
-.button__secondary {/* class selector */
+.button__secondary {
   background-color: var(--BUTTONS);
   color: black;
 }
@@ -245,6 +250,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   }
 }
 
+/* WORK */
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -262,13 +269,20 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .project-list__item:last-child {
   grid-column: 3/3;
-  grid-row: 1/3;
+  grid-row: 1/ span 3;
   /* in long form this would be: ;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   */
+}
+
+#work .project-list__item img {
+  width: 100%;
+  object-fit: cover;
+  height: 165px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .page-footer {
@@ -295,7 +309,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   border-radius: 50%;
   width: 250px;
   height: auto;
-  margin-right: 40px;
+  margin: 10px 40px 10px 10px;
   box-shadow: 5px 5px 20px var(--ACCENT);
 }
 
