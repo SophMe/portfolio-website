@@ -104,8 +104,6 @@ button, .button {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.4s opacity;
-  /* transition-duration: 0.4s;
-  transition-property: opacity; */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -238,7 +236,6 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   display: inline-block;
   width: 100%;
 }
-
 /* end grid fallback for old browsers */
 
 @supports (display: grid) {
@@ -287,7 +284,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .page-footer {
   clear: both; /* clear all floats, both left and right */
-  display: flex; /* this creates a flex-container for the element .page-footer */
+  display: flex;
   flex-direction: column;
   text-align: center;
   flex: 1 1 100;
@@ -355,58 +352,7 @@ text-area {
 .light {
   animation: 6s color-change-lightbulb infinite alternate linear;
 }
-
 /* end animation for lightbulb */
-
-/*
-@keyframes color-change { /*for the sun
-  0% {
-    fill: #edc655;
-  }
-  25% {
-    fill: #b85a42;
-  }
-  50% {
-    fill: #993b37;
-  }
-  75% {
-    fill: #b85a42;
-  }
-  100% {
-    fill: #f76414
-  }
-}
-
-.sun {
-  animation: 10s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 30px);
-  }
-}
-
-.cloud-front {
-  animation: 32s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 120px);
-  }
-}
-
-.cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate linear;
-}
-*/
 
 @media all and (max-width: 500px) {
   .project-list {
