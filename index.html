@@ -15,28 +15,30 @@
     
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__item"><img src="img/logo.png" height="70px" alt="logo Sophie Meinz"></a>
-      <nav class="main-navigation page-header__item">
-        <div>
-          <ul role="menubar" class="navigation-list">	
-            <li role="presentation" class="container bgcol twolines">
-              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">home</a>
-            </li>
-            <li role="presentation" class="container bgcol twolines">
-              <a href="#about" role="menuitem" class="navigation-list__item" aria-label="About section">about</a>
-            </li>
-            <li role="presentation" class="container bgcol twolines">
-              <a href="#skills" role="menuitem" class="navigation-list__item" aria-label="Skills section">skills</a>
-            </li>
-            <li role="presentation" class="container bgcol twolines">
-              <a href="#work" role="menuitem" class="navigation-list__item" aria-label="Projects section">projects</a>
-            </li>
-            <li role="presentation" class="container bgcol twolines">
-              <a href="#contact" role="menuitem" class="navigation-list__item" aria-label="Contact section">contact</a>
-            </li>	
-          </ul>
-        </div>	
-      </nav>	
+      <div class="header-content">
+        <a href="index.html" class="page-header__item"><img src="img/logo.png" height="70px" alt="logo Sophie Meinz"></a>
+        <nav class="main-navigation page-header__item">
+          <div>
+            <ul role="menubar" class="navigation-list">	
+              <li role="presentation" class="container bgcol twolines">
+                <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">home</a>
+              </li>
+              <li role="presentation" class="container bgcol twolines">
+                <a href="#about" role="menuitem" class="navigation-list__item" aria-label="About section">about</a>
+              </li>
+              <!-- <li role="presentation" class="container bgcol twolines">
+                <a href="#skills" role="menuitem" class="navigation-list__item" aria-label="Skills section">skills</a>
+              </li> -->
+              <li role="presentation" class="container bgcol twolines">
+                <a href="#work" role="menuitem" class="navigation-list__item" aria-label="Projects section">projects</a>
+              </li>
+              <li role="presentation" class="container bgcol twolines">
+                <a href="#contact" role="menuitem" class="navigation-list__item" aria-label="Contact section">contact</a>
+              </li>	
+            </ul>
+          </div>	
+        </nav>	
+     </div>
     </header>	
       
     <main>
@@ -44,74 +46,106 @@
       <section id="about">
         <div class="profile-container">
           <img src="img/IMG_1062.JPG" class="profile-portrait" alt="Sophie Meinz Portrait">
-          <h1>Hello!</h1>
-          <p>
-            My name is Sophie. I'm a full-stack web developer living in Berlin.
-          </p>
-          <p>
-            Curious language enthusiast. <br>
-            Excited to continue learning and <br>
-            Passionate about making a positive impact.
-          </p>
-          <p>
-            <a href="files/cv.pdf" class="button" download>Download my CV</a>
-            <a href="https://de.linkedin.com/" class="button" target="_blank">LinkedIn</a>
-            <br>
-            <a href="#work">Check out some of my code</a>
-          </p>
+          <div class="about-info">
+            <h1>Hello!</h1>
+            <p>
+              My name is Sophie. <br>
+              I'm a full-stack web developer living in Berlin.
+            </p>
+            <p>
+              Curious language enthusiast. <br>
+              Excited to continue learning and <br>
+              Passionate about making a positive impact.
+            </p>
+            <div class="links">
+              <a href="files/cv.pdf" class="button" download>Download my CV</a>
+              <a href="https://de.linkedin.com/" class="button" target="_blank">LinkedIn</a>
+              <br>
+              <a href="#work">Check out some of my code</a>
+            </div>
+          </div>
         </div>
       </section>
       
       <!-- SKILLS -->
-      <section id="skills">
+      <!-- <section id="skills">
+        <div class="skills-container">
+          <h1>Skills</h1>
+          <div>
+            <div class="skills-list">
 
-      </section>
+              <div class="skills-list__item">
+                <h2>Languages</h2>
+              </div>
+
+              <div class="skills-list__item">
+                <h2>Frontend</h2>
+              </div>
+
+              <div class="skills-list__item">
+                <h2>Backend</h2>
+              </div>
+
+              <div class="skills-list__item">
+                <h2>Tools</h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section> -->
 
        <!-- WORK -->
        <section id="work">
-        <h1>Work</h1>
         <div class="work-container">
+          <h1>Work</h1>
           <div class="project-list">
             
             <div class="project-list__item">
+              <img src="img/chat.png" alt="Chat App Image">
               <h2>Chat App</h2>
               <p>
                 A simple chat app built using React Native that provides users with a chat interface and 
                 options to share images and their location.
               </p>
-              <a href="https://github.com/SophMe/chat-app" target="_blank">See project on GitHub</a>
+              <br>
+              <a class="project-link" href="https://github.com/SophMe/chat-app" target="_blank">See project on GitHub</a>
             </div>
 
             <div class="project-list__item">
+              <img src="img/90s-movies_React.png" alt="React App Image">
               <h2>Client-Side React App</h2>
               <p>
                 This is the client-side for the <a href="https://github.com/SophMe/90s-movie-api" target="_blank">REST API</a>, 
                 built with React and React Bootstrap.
               </p>
-              <a href="https://github.com/SophMe/movieAPI-client" target="_blank">See project on GitHub</a>
-              <a href="https://90s-movies.netlify.app/movies" target="_blank">App</a>
+              <br>
+              <a class="project-link" href="https://90s-movies.netlify.app/movies" target="_blank">Open project in a new tab</a> <br>
+              <a class="project-link" href="https://github.com/SophMe/movieAPI-client" target="_blank">See project on GitHub</a>
             </div>
 
             <div class="project-list__item">
+              <img src="img/meet.png" alt="Meet App Image">
               <h2>Meet App</h2>
               <p>
                 This is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) 
                 technique. The application uses the Google Calendar API to fetch upcoming events.
               </p>
-              <a href="https://sophme.github.io/meet/" target="_blank">Open project in a new tab</a>
               <br>
-              <a href="https://github.com/SophMe/meet" target="_blank">See project on GitHub</a>
+              <a class="project-link" href="https://sophme.github.io/meet/" target="_blank">Open project in a new tab</a> <br>
+              <a class="project-link" href="https://github.com/SophMe/meet" target="_blank">See project on GitHub</a>
             </div>
 
             <div class="project-list__item">
+              <img src="img/pokémon_index.png" alt="Index App Image">
               <h2>Pokémon Index App</h2>
               <p>
                 This is a web application build with HTML, CSS and Javascript loading a list of Pokémon from an external 
                 API and enabling the user to view data points in detail.
               </p>
-              <a href="https://clever-fox-ab3f44.netlify.app/" target="_blank">Open project in a new tab</a>
               <br>
-              <a href="https://github.com/SophMe/Index-App" target="_blank">See project on GitHub</a>
+              <a class="project-link" href="https://clever-fox-ab3f44.netlify.app/" target="_blank">Open project in a new tab</a> <br>
+              <a class="project-link" href="https://github.com/SophMe/Index-App" target="_blank">See project on GitHub</a>
             </div>
 
             <div class="project-list__item">
@@ -119,7 +153,8 @@
               <p>
                 REST API that interacts with a database and stores data about different movies. Built using Node.js and Express.
               </p>
-              <a href="https://github.com/SophMe/90s-movie-api" target="_blank">See project on GitHub</a>  
+              <br>
+              <a class="project-link" href="https://github.com/SophMe/90s-movie-api" target="_blank">See project on GitHub</a>  
             </div>
 
             <div class="project-list__item">
@@ -129,19 +164,20 @@
                 The user can add a new item to a list of items, cross out an item from the list of items, 
                 delete an item from the list of items, and change the order of items in the list of items.
               </p>
-                <a href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">Open project in a new tab</a>
               <br>
-              <a href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">See project on GitHub</a>
+              <a class="project-link" href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">Open project in a new tab</a> <br>
+              <a class="project-link" href="https://bespoke-baklava-a7a85e.netlify.app/" target="_blank">See project on GitHub</a>
             </div>
 
             <div class="project-list__item">
+              <img src="img/90s-movies_Angular.png" alt="Angular App Image">
               <h2>Client-Side Angular App</h2>
               <p>
                 Client-Side for the 90s Movie API built with Angular.
               </p>
-              <a href="https://sophme.github.io/movie-client-Angular/welcome">Open project in a new tab</a>
               <br>
-              <a href="https://github.com/SophMe/movie-client-Angular" target="_blank">See project on GitHub</a>
+              <a class="project-link" href="https://sophme.github.io/movie-client-Angular/welcome">Open project in a new tab</a> <br>
+              <a class="project-link" href="https://github.com/SophMe/movie-client-Angular" target="_blank">See project on GitHub</a>
             </div>
               
           </div>
@@ -152,7 +188,7 @@
       
     <footer class="page-footer">
       <!-- CONTACT -->
-      <section id="contact">
+      <section id="contact-container">
         <h3>Find me on</h3>
         <div class="social-media">
           <a href="https://codepen.io/SophMe" target="_blank"><img src="img/codepen.svg" alt="CodePen"></a>
