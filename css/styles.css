@@ -1,14 +1,14 @@
 /* || Variables */
 :root {
   /* COLORS */
-  --BGCOLOR: #a5beb9;
+  --BGCOLOR: #bac8ce;
   --ALTBGCOLOR: #fbfaf8;
   --TEXTCOLOR: #22223b;
-  --BUTTONS: #a5beb9;
-  --ACCENT: #635463;
+  --BUTTONS: #e7ecee;
+  --ACCENT: #5f849c;
   /* FONTS */
   --TITLEFONT: 'Raleway', sans-serif;
-  --TEXTFONT: 'Open Sans', sans-serif;
+  --TEXTFONT: 'Crimson Text', serif;
 }
 
 * {
@@ -110,7 +110,7 @@ input, textarea {
 button, .button {
   border: none;
   display: inline-block;
-  font-family: inherit; /* takes font from outer container */
+  font-family: 0.9em;
   background-color: var(--BUTTONS);
   color: white;
   text-decoration: none;
@@ -135,7 +135,7 @@ li { text-decoration: none; }
 /* inspired by Evyatar Da's codepen https://codepen.io/EvyatarDa/pen/waKXMd
 */
 li.container {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--TEXTFONT);
   margin: 0 auto;
   padding: 15px;
   text-align: right;
@@ -287,8 +287,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .about-info {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin: 2rem;
+  padding: 4rem 10rem 2rem 4rem;
   line-height: 1.8rem;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -368,10 +368,10 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 
 .project-list__item:last-child {
   grid-column: 3/3;
-  grid-row: 1/ span 3;
+  grid-row: 1/ span 2;
   /* in long form this would be: ;
   grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-end: 3;w
   grid-row-start: 1;
   grid-row-end: 3;
   */
@@ -444,6 +444,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   }
   .about-info {
     margin-bottom: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -453,6 +454,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   }
   .about-info {
     margin: 1rem 0;
+    padding: 1rem;
   }
 }
 
