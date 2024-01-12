@@ -301,8 +301,8 @@ li.twolines a:hover:before, li.twolines a:hover:after {
 /* SECTIONS */
 
 .profile-container,
+.projects-container,
 .skills-container,
-.work-container,
 .contact-container {
   padding: 1rem;
   background-color: var(--BGCOLOR);
@@ -393,9 +393,9 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   }
 }
 
-/* WORK */
+/* PROJECTS */
 
-.work-container h1 {
+.projects-container h1 {
   margin-bottom: 2rem;
 }
 
@@ -430,7 +430,7 @@ li.twolines a:hover:before, li.twolines a:hover:after {
   */
 }
 
-#work .project-list__item img {
+#projects .project-list__item img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
